@@ -10,7 +10,7 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - name: Checkout
+    - name: Checkout repository
       uses: actions/checkout@v4
 
     - name: Setup Xcode
@@ -21,13 +21,13 @@ jobs:
     - name: Build unsigned archive
       run: |
         xcodebuild clean archive \
-        -project unsigned_browser.xcodeproj \   # <- proje dosya adı repo ile aynı
-        -scheme unsigned_browser \              # <- scheme adı
-        -configuration Release \
-        -archivePath build/unsigned_browser.xcarchive \
-        CODE_SIGNING_ALLOWED=NO \
-        CODE_SIGNING_REQUIRED=NO \
-        CODE_SIGN_IDENTITY=""
+          -project unsigned_browser.xcodeproj \
+          -scheme unsigned_browser \
+          -configuration Release \
+          -archivePath build/unsigned_browser.xcarchive \
+          CODE_SIGNING_ALLOWED=NO \
+          CODE_SIGNING_REQUIRED=NO \
+          CODE_SIGN_IDENTITY=""
 
     - name: Export unsigned IPA
       run: |
