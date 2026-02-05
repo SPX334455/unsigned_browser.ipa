@@ -1,0 +1,43 @@
+// project.pbxproj içeriği çok uzun, ama temel şema ve target şunlar:
+{
+  archiveVersion = 1;
+  classes = {};
+  objectVersion = 55;
+  objects = {
+    /* Begin PBXProject section */
+    1234567890ABCDEF /* Project object */ = {
+      isa = PBXProject;
+      attributes = {
+        LastUpgradeCheck = 1350;
+      };
+      buildConfigurationList = 1234567890ABCDE0;
+      compatibilityVersion = "Xcode 14.0";
+      developmentRegion = en;
+      hasScannedForEncodings = 0;
+      mainGroup = 1234567890ABCDE1;
+      productRefGroup = 1234567890ABCDE2;
+      projectDirPath = "";
+      projectRoot = "";
+      targets = (
+        1234567890ABCDE3 /* unsigned_browser */,
+      );
+    };
+    /* End PBXProject section */
+    /* Begin PBXNativeTarget section */
+    1234567890ABCDE3 /* unsigned_browser */ = {
+      isa = PBXNativeTarget;
+      buildConfigurationList = 1234567890ABCDE4;
+      buildPhases = (
+        1234567890ABCDE5 /* Sources */,
+        1234567890ABCDE6 /* Frameworks */,
+      );
+      buildRules = ();
+      dependencies = ();
+      name = unsigned_browser;
+      productName = unsigned_browser;
+      productReference = 1234567890ABCDE7 /* unsigned_browser.app */;
+      productType = "com.apple.product-type.application";
+    };
+    /* End PBXNativeTarget section */
+  };
+}
